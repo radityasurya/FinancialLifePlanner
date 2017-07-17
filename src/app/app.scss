@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,28 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Oswald:700';
+ion-page,
+ion-nav,
+ion-menu {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  height: 3em;
+  border-radius: 20px;
+  box-shadow: none;
+  ion-icon {
+    margin-right: 6px
+  }
+  &.button-green {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    background-color: rgba(16, 140, 123, 0.5);
+    border: 1px solid white;
+  }
+}
