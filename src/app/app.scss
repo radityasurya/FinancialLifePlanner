@@ -20,6 +20,27 @@ ion-menu {
   font-family: 'Varela Round', sans-serif;
 }
 
+// Header
+.toolbar-background {
+  border: 0;
+  background-color: rgb(16, 140, 123);
+}
+
+.app-logo {
+  display: block;
+  width: 4rem;
+  margin: 0 auto;
+}
+
+ion-header::after {
+  display: none
+}
+
+.back-button-text {
+  display: none
+}
+
+// Buttons
 .button {
   text-transform: uppercase;
   font-size: 1.4rem;
