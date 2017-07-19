@@ -1,18 +1,23 @@
+$tint: rgba(0, 0, 0, 0.3);
+$url: '../../assets/image/bgMountain1031465@2x.png';
+
 .page-login {
-  background: rgba(0, 0, 0, .35);
-  background: url('../../assets/image/bgMountain1031465@2x.png') no-repeat center;
+  @include background-tint($tint, $url);
   background-size: cover;
   color: white;
+
   .logo {
     &--big {
       margin-top: 20%;
     }
   }
+
   .tag {
     margin-top: 5%;
     line-height: 1.5em;
     padding: 5px 55px;
   }
+  
   .button {
     &.button-green {
       width: 250px;

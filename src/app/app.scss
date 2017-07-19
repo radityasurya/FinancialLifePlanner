@@ -20,10 +20,20 @@ ion-menu {
   font-family: 'Varela Round', sans-serif;
 }
 
+// Colors
+$green: rgb(16, 140, 123);
+
+// Mixin
+@mixin background-tint($tint_color, $image_url) {
+  background: 
+    linear-gradient( $tint_color, $tint_color ),
+    url( $image_url ) no-repeat center
+}
+
 // Header
 .toolbar-background {
-  border: 0;
-  background-color: rgb(16, 140, 123);
+  border: none;
+  background-color: $green;
 }
 
 .app-logo {
@@ -49,6 +59,10 @@ ion-header::after {
   box-shadow: none;
   ion-icon {
     margin-right: 6px
+  }
+
+  &--white {
+      color: white;
   }
   &.button-green {
     position: absolute;
