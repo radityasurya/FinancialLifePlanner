@@ -1,5 +1,5 @@
 <ion-header no-border>
-  <ion-navbar no-border>
+  <ion-navbar no-border class="toolbar--green">
     <button ion-button class="button--white" menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -10,44 +10,58 @@
 </ion-header>
 
 <ion-content class="page-home">
-  <ion-grid no-padding >
+  <ion-grid no-padding>
     <ion-row>
-      <ion-col class="heading" col-12 padding style="height: 220px; ">
+      <ion-col class="heading" col-12 padding>
         <h3 style="color: white">El primer pas és definir el teu objectiu:</h3>
 
         <p class="heading-subtitle">
           TRIA UN DE LA LLISTA O DEFINEIX-LO TU
         </p>
+
+        <ul id="pagination-bullet">
+          <li class="bullet"><a class="active"></a></li>
+          <li class="bullet"><a></a></li>
+          <li class="bullet"><a></a></li>
+          <li class="bullet"><a></a></li>
+        </ul>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <div no-padding class="objectives">
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/image/objectives/familia@2x.png" />
-      </div>
-      <div class="card-title">
-        La millor llar per la meva familia
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/image/objectives/universitat@2x.png" />
-      </div>
-      <div class="card-title">
-        Portar els fills a l’universitat
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-        <img src="assets/image/objectives/familia@2x.png" />
-      </div>
-      <div class="card-title">
-        Una merescuda jubilació
-      </div>
-    </div>
-  </div>
 
+  <ion-card (click)="toSavings()">
+    <img src="assets/image/objectives/familia@3x.png"/>
+    <div class="card-title">La millor llar per la meva familia</div>
+  </ion-card>
+  <ion-card (click)="toSavings()">
+    <img src="assets/image/objectives/universitat@3x.png"/>
+    <div class="card-title">Portar els fills a l’universitat</div>
+  </ion-card>
+  <ion-card (click)="toSavings()">
+    <img src="assets/image/objectives/job@3x.png"/>
+    <div class="card-title">Una merescuda jubilació</div>
+  </ion-card>
+
+
+  <!-- <ion-grid no-padding>
+    <ion-row>
+      <ion-col (click)="toSavings()" col-12>
+        <div class="objective">
+          <h4 class="objective__title">La millor llar per la meva familia</h4>
+        </div>
+      </ion-col>
+      <ion-col (click)="toSavings()" col-12>
+        <div class="objective">
+          <h4 class="objective__title">La millor llar per la meva familia</h4>
+        </div>
+      </ion-col>
+      <ion-col (click)="toSavings()" col-12>
+        <div class="objective">
+          <h4 class="objective__title">La millor llar per la meva familia</h4>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
 
 </ion-content>

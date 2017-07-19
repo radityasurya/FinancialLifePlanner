@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-navbar no-border>
+    <button ion-button class="button--white" menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <img class="app-logo" src="assets/image/logo/logo@2x.png" />
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="page-savings">
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col class="heading" col-12 padding>
+        <h3 style="color: white">De quins estalvis disposes?</h3>
+
+        <ul id="pagination-bullet">
+          <li class="bullet"><a></a></li>
+          <li class="bullet"><a class="active"></a></li>
+          <li class="bullet"><a></a></li>
+          <li class="bullet"><a></a></li>
+        </ul>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="input-form">
+        <p>QUANTITAT ESTALVIADA DISPONIBLE</p>
+        <ion-item no-padding>
+          <ion-icon name="logo-euro" class="input-form__icon" item-end></ion-icon>
+          <ion-input clearInput value="56.500" type="number" class="input-form__text"></ion-input>
+        </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer no-border >
+  <ion-toolbar no-padding>
+    <button (click)="next()" class="button-full" ion-button full>SEGÜENT</button>
+  </ion-toolbar>
+</ion-footer>

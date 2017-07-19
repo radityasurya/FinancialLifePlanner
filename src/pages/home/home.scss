@@ -1,37 +1,58 @@
 .page-home {
   color: white;
+  background: rgb(238, 238, 238);
+
+  .toolbar-background {
+    background-color: $green!important;
+  }
 
   .heading {
     background-color: $green;
-    
+    padding: 25px !important;
+    height: 260px;
+
+    h3 {
+      text-align: center;
+      @include vertical-align();
+    }
+
     .heading-subtitle {
-        position: absolute;
-        bottom: 0;
-        left: 16px;
-        font-size: 12px;
-        opacity: 0.6;
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+      font-size: 12px;
+      opacity: .6;
     }
   }
-}
 
-.card {
-  position: relative;
-  text-align: center;
-  margin-top: 5px;
-}
+  .objective {
+    position: relative;
+    min-height: 150px;
+    background-color: black;
+    background-image: url("../../assets/image/objectives/familia@2x.png");
+    background-size: cover;
 
-.card-title {
-  position: absolute;
-  top: 30%;
-  font-size: 1.2em;
-  width: 100%;
-  color: #fff;
-}
+    &__title {
+      text-align: center;
+      @include vertical-align();
+    }
+  }
 
-.card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
-  width: 100%;
-  color: #fff;
+  ion-card {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 43%;
+    font-size: 1.4em;
+    width: 100%;
+    color: #fff;
+  }
+
+
 }
