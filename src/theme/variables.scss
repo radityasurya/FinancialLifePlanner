@@ -38,16 +38,22 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  green: rgb(16, 140, 123)
 );
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
-
+$range-ios-bar-background-color: rgb(233, 233, 233);
+$range-ios-bar-active-background-color: map-get($colors, green);
+$range-ios-bar-height: 3px;
+$range-ios-tick-active-background-color: map-get($colors, green);
+$range-ios-knob-width: 22px;
+$range-ios-knob-background-color: map-get($colors, green);
+$range-ios-tick-height: 0;
+$range-ios-pin-font-size: 20px;
+$range-ios-hit-width: 100px;	
 
 // App Material Design Variables
 // --------------------------------------------------

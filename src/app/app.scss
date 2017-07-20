@@ -15,14 +15,14 @@
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
 @import 'https://fonts.googleapis.com/css?family=Oswald:700';
 
+// Colors
+$green: rgb(16, 140, 123);
+
 ion-menu,
 ion-nav,
 ion-page {
   font-family: 'Varela Round', sans-serif;
 }
-
-// Colors
-$green: rgb(16, 140, 123);
 
 // Mixin
 @mixin background-tint($tint_color, $image_url) {

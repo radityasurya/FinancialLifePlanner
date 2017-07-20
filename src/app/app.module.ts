@@ -11,6 +11,7 @@ import { TargetPage } from './../pages/target/target';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ResultPage } from "../pages/result/result";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     MonthlySavingsPage,
     SavingsPage,
-    TargetPage
+    TargetPage,
+    ResultPage,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     MonthlySavingsPage,
     SavingsPage,
-    TargetPage
+    TargetPage,
+    ResultPage,
   ],
   providers: [
     StatusBar,

@@ -17,10 +17,40 @@
 
         <ul id="pagination-bullet">
           <li class="bullet"><a></a></li>
+          <li class="bullet"><a></a></li>
+          <li class="bullet"><a></a></li>
           <li class="bullet"><a class="active"></a></li>
-          <li class="bullet"><a></a></li>
-          <li class="bullet"><a></a></li>
         </ul>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="subtitle">
+          <p>XIFRA APROXIMADA QUE PODRIES ESTALVIAR CADA ANY </p>
+        </div>
+      </ion-col>
+      <ion-col col-12>
+        <ion-item no-border>
+          <ion-range dualKnobs="true" [(ngModel)]="dualValue2" min="1000" max="8000" step="1000" pin="true" snaps="true"></ion-range>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="subtitle">
+          <p>O SELECCIONA UNA OPCIÓ:</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center col-4>
+        <span class="money-button">8000 €</span>
+      </ion-col>
+      <ion-col text-center col-4>
+        <span class="money-button">10k €</span>
+      </ion-col>
+      <ion-col text-center col-4>
+        <span class="money-button">Altre</span>
       </ion-col>
     </ion-row>
   </ion-grid>
