@@ -29,8 +29,16 @@
           <p>XIFRA APROXIMADA QUE PODRIES ESTALVIAR CADA ANY </p>
         </div>
       </ion-col>
+    </ion-row>
+    <ion-row class="range-label">
+      <ion-col class="range-label__text">2000€</ion-col>
+      <ion-col class="range-label__text">4000€</ion-col>
+      <ion-col class="range-label__text">6000€</ion-col>
+      <ion-col class="range-label__text">8000€</ion-col>
+    </ion-row>
+    <ion-row padding class="no-padding-top no-padding-bottom">
       <ion-col col-12>
-        <ion-item no-border>
+        <ion-item no-border no-lines>
           <ion-range dualKnobs="true" [(ngModel)]="dualValue2" min="1000" max="8000" step="1000" pin="true" snaps="true"></ion-range>
         </ion-item>
       </ion-col>
@@ -42,7 +50,7 @@
         </div>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row padding class="no-padding-top">
       <ion-col text-center col-4>
         <span class="money-button">8000 €</span>
       </ion-col>

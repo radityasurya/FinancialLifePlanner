@@ -36,6 +36,10 @@ ion-page {
   transform: translateY(-50%);
 }
 
+.no-padding-top { padding-top: 0!important; }
+.no-padding-bottom { padding-bottom: 0!important; }
+.no-padding-right { padding-right: 0!important; }
+
 // Header
 .toolbar-background {
   border: none;

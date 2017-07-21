@@ -43,11 +43,24 @@ $url: '../../assets/image/monthly-savings/familia@2x.png';
     font-size: 0.8em;
     padding: 15px;
     padding-bottom: 0;
+    margin: 0;
   }
   .range-ios.range-has-pin {
     padding-top: 0;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
   }
+  .range-label {
+    padding: 16px;
+    padding-left: 25px;
+    padding-bottom: 0;
+    &__text {
+      color: rgb(178, 178, 178);
+    font-size: 12px;
+    text-align: right;
+    padding-left: 10px;
+    }
+  }
+
   .range-pin:after,
   .range-pin:before {
     bottom: 100%;
