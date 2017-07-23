@@ -10,22 +10,116 @@
 </ion-header>
 
 <ion-content class="page-result">
-  <ion-grid no-padding>
-    <ion-row class="heading">
-      <ion-col>
-        <span>Objectiu</span>
-        <h4>500.000 €</h4>
+  <ion-grid no-padding class="heading">
+    <ion-row class="summary">
+      <ion-col class="summary__container">
+        <span class="summary__label">Objectiu</span>
+        <h4 class="summary__value">500.000 €</h4>
       </ion-col>
-      <ion-col>
-        <span>Saldo inicial</span>
-        <h4>200.000 €</h4>
+      <ion-col class="summary__container" style="left: 40%">
+        <span class="summary__label">Saldo inicial</span>
+        <h4 class="summary__value">200.000 €</h4>
       </ion-col>
-      <ion-col>
-        <span>Estalvi anual</span>
-        <h4>6.000 €</h4>
+      <ion-col class="summary__container" style="left: 75%">
+        <span class="summary__label">Estalvi anual</span>
+        <h4 class="summary__value">6.000 €</h4>
+      </ion-col>
+      <ion-col class="summary__container" style="bottom: 0%">
+        <span class="summary__label" style="position: absolute; top: 12px;">Plaç</span>
+        <ion-item no-lines no-padding>
+          <ion-range [(ngModel)]="singleValue" min="0" max="12" pin="true"></ion-range>
+        </ion-item>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-12 text-center class="result-title">
+        <h5>Et proposem una inversió conservadora amb una renta variable del 34% i productes de risc 4 / 6:</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <ion-col class="result-left">
+        <div class="risc-icon risc-icon--yellow"></div>
+        <div class="risc-promig gray small">
+          <span class="icon">?</span>
+          RISC PROMIG
+        </div>
+        <div class="result-progress">
+          <span class="green">4</span> / 6
+        </div>
+
+      </ion-col>
+      <ion-col class="result-right">
+        <div class="result-charts">
+          <div class="current">{{ current }}%</div>
+
+          <round-progress class="chart" [current]="current" [max]="max" [stroke]="stroke" [radius]="radius" [rounded]="rounded" [color]="color" [background]="background">
+          </round-progress>
+        </div>
+
+        <div class="result-label">
+          <span class=" small">RENTA VARIABLE</span>
+        </div>
+      </ion-col>
+      <ion-col col-12 style="padding-top: 20px; border-bottom: 1px solid rgb(228, 228, 228)">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-12 text-center class="result-title">
+        <h5>Amb aquest objectiu et recomanem els següents productes d’inversió:</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row class="result-header">
+      <ion-col col-2>RISC</ion-col>
+      <ion-col col-6>FONS</ion-col>
+      <ion-col col-4>RENTA 2016</ion-col>
+    </ion-row>
+    <ion-row class="result-container">
+      <ion-col col-2>
+        <div (click)="openRiscDetail($event)" class="risc-icon risc-icon--green"></div>
+      </ion-col>
+      <ion-col col-6 (click)="openFonsDetail($event)">
+        MG Optimal
+        <div class="result-fons">
+          <span class="gray">2</span> / 6
+          <span class="gray small divider">-</span>
+          <span class="gray small">Aportació 33%</span>
+        </div>
+      </ion-col>
+      <ion-col col-4 class="result-percentage">6,96%</ion-col>
+    </ion-row>
+    <ion-row class="result-container">
+      <ion-col col-2>
+        <div (click)="openRiscDetail($event)" class="risc-icon risc-icon--yellow"></div>
+      </ion-col>
+      <ion-col col-6 (click)="openFonsDetail($event)">
+        Nordea Stable
+       <div class="result-fons">
+          <span class="gray">4</span> / 6
+          <span class="gray small divider">-</span>
+          <span class="gray small">Aportació 33%</span>
+        </div>
+      </ion-col>
+      <ion-col col-4 class="result-percentage">2,95%</ion-col>
+    </ion-row>
+    <ion-row class="result-container">
+      <ion-col col-2>
+        <div (click)="openRiscDetail($event)" class="risc-icon risc-icon--yellow"></div>
+      </ion-col>
+      <ion-col col-6 (click)="openFonsDetail($event)">
+        Investo Balance Risk
+        <div class="result-fons">
+          <span class="gray">4</span> / 6
+          <span class="gray small divider">-</span>
+          <span class="gray small">Aportació 34%</span>
+        </div>
+      </ion-col>
+      <ion-col col-4 class="result-percentage">9,25%</ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-
-

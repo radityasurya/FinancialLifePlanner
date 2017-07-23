@@ -12,8 +12,10 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-@import 'https://fonts.googleapis.com/css?family=Varela+Round';
-@import 'https://fonts.googleapis.com/css?family=Oswald:700';
+@import 'https://fonts.googleapis.com/css?family=Varela+Round:300,400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Oxygen:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 
 // Colors
 $green: rgb(16, 140, 123);
@@ -34,6 +36,12 @@ ion-page {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@mixin vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .no-padding-top { padding-top: 0!important; }
@@ -134,3 +142,4 @@ ion-navbar.toolbar {
     }
   }
 }
+

@@ -1,0 +1,46 @@
+.fons-detail {
+  background: rgb(66, 76, 105);
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  .risc-box {
+      background: white;
+      color: black;
+      height: 88px;
+      width: 102px;
+      padding: 12px;
+      border-radius: 6px;
+        
+      .risc-icon {
+          display: inline-block;
+      }
+
+      .risc-title {
+          font-size: 12px;
+          color: rgb(102, 102, 102);
+          position: absolute;
+          top: 22px;
+          right: 24px;
+      }
+
+      .result-progress {
+          padding-top: 0;
+          text-align: center;
+      }
+  }
+  .title {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin-bottom: 17px;
+  }
+  .percentage {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.9px;
+  }
+  .label {
+    color: rgb(48, 165, 218);
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+}

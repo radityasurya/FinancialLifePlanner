@@ -1,23 +1,198 @@
 $tint: rgba(16, 140, 122, 0.7);
 $url: '../../assets/image/monthly-savings/familia@2x.png';
-
 .page-result {
-  color: white;
+  color: black;
   .heading {
     @include background-tint($tint, $url);
     background-size: cover;
-    padding: 65px !important;
+    padding-top: 70px;
     height: 210px;
-    h3 {
-      text-align: center;
-      @include vertical-align();
-    }
-    .heading-subtitle {
+    color: white;
+  }
+  .summary {
+    padding: 16px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &__container {
       position: absolute;
-      bottom: 0;
-      left: 16px;
+    }
+    &__label {
+      color: rgb(204, 204, 204);
       font-size: 12px;
-      opacity: .6;
+    }
+    &__value {
+      color: white;
+      font-size: 20px;
+      font-family: 'Oswald';
+      line-height: 15px;
+      font-weight: 400;
+      margin-top: 5px!important;
+    }
+    .item-ios {
+      background: transparent!important;
+    }
+    .range-ios .range-slider {
+      height: 62px;
+    }
+    .range-ios {
+      padding-left: 0!important;
+    }
+    .range-ios.range-has-pin {
+      padding-top: 0;
+    }
+    .range-bar {
+      top: 34px;
+    }
+    .range-slider {
+      height: 70px;
+    }
+    .range-pin {
+      top: 8px;
+      left: -5px;
+      height: 50px;
+    }
+    .range-ios .range-knob-handle {
+      height: 80px;
+      margin-top: -33px;
+    }
+    .range-ios .range-knob {
+      height: 11.5px;
+      width: 11.5px;
+      background: rgb(231, 189, 91);
+      top: 50%;
+    }
+    .range-ios .range-bar-active {
+      background: rgb(231, 189, 91);
+    }
+    .range-ios .range-pin {
+      position: relative;
+      display: inline-block;
+      font-family: "Oswald";
+      color: white;
+      font-size: 15px;
     }
   }
+  .result-title {
+    color: black;
+    padding-left: 45px!important;
+    padding-right: 45px!important;
+    h5 {
+      letter-spacing: -1px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+  .result-header {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(178, 178, 178);
+    padding-left: 18px;
+    padding-top: 35px;
+    padding-bottom: 3px;
+  }
+  .result-fons {
+    margin-top: 5px;
+    .divider {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  .result-container {
+    padding-left: 18px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include vertical-center();
+  }
+  .result-right,
+  .result-left {
+    text-align: center;
+    .risc-icon {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    .risc-promig {
+      @include vertical-center();
+    }
+    .icon {
+      font-size: 8px;
+      font-family: 'Source Sans Pro', sans-serif;
+      border: 1px solid rgb(136, 136, 136);
+      border-radius: 100%;
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      position: relative;
+      margin-right: 5px;
+      color: rgb(136, 136, 136);
+    }
+  }
+  .chart {
+    margin: 0 auto;
+  }
+  .result-label {
+    margin-top: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.5px;
+    color: rgb(142, 142, 147);
+  }
+  .result-percentage {
+    font-size: 30px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+
+  .current {
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    top: 24px;
+    left: 38%;
+  }
+  
 }
+
+.risc-icon {
+  width: 24.5px;
+  height: 24.5px;
+  border-radius: 100%;
+  display: block;
+  position: relative;
+  &--yellow {
+    background: rgb(235, 205, 41);
+  }
+  &--green {
+    background: rgb(114, 187, 50);
+  }
+}
+  .result-progress {
+    font-size: 32px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+        letter-spacing: 1.2px;
+
+  }
+
+  .gray {
+    color: rgb(178, 178, 178);
+  }
+  .green {
+    color: rgb(136, 136, 136);
+  }
+  .small {
+    font-size: 12px;
+  }
+  .big {
+    font-size: 32px;
+  }
