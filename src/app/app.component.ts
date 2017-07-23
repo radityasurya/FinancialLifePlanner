@@ -15,7 +15,7 @@ import { TargetPage } from "../pages/target/target";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = TargetPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
