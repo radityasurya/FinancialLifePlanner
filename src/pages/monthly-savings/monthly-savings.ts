@@ -7,10 +7,7 @@ import { ResultPage } from "../result/result";
   templateUrl: 'monthly-savings.html'
 })
 export class MonthlySavingsPage {
-  dualValue2: any = {
-    lower: 1000,
-    upper: 5000
-  };
+  moneyValue: any = 5000;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 

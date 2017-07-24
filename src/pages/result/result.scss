@@ -72,6 +72,9 @@ $url: '../../assets/image/monthly-savings/familia@2x.png';
       color: white;
       font-size: 15px;
     }
+    .range-ios .range-knob-handle .range-pin {
+      transform: translate3d(0, 0, 0) scale(1); 
+    }
   }
   .result-title {
     color: black;
