@@ -17,6 +17,6 @@ export class MonthlySavingsPage {
   }
 
   next() {
-    this.navCtrl.setRoot(ResultPage);
+    this.navCtrl.push(ResultPage);
   }
 }

@@ -3,7 +3,7 @@
   background: rgb(238, 238, 238);
 
   .toolbar-background {
-    background-color: $green!important;
+    background-color: $green !important;
   }
 
   .heading {
@@ -38,12 +38,31 @@
     }
   }
 
+  #familia {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url("../../assets/image/objectives/familia@3x.png");
+    background-size: cover;
+  }
+
+  #universitat {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url("../../assets/image/objectives/universitat@3x.png");
+    background-size: cover;
+  }
+
+  #job {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url("../../assets/image/objectives/job@3x.png");
+    background-size: cover;
+  }
+
   ion-card {
     position: relative;
     text-align: center;
     width: 100%;
     margin: 0;
     margin-top: 5px;
+    min-height: 150px;
   }
 
   .card-title {
@@ -53,6 +72,4 @@
     width: 100%;
     color: #fff;
   }
-
-
 }

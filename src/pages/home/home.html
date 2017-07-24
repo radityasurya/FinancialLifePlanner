@@ -1,8 +1,10 @@
 <ion-header no-border>
-  <ion-navbar no-border class="toolbar--green">
+  <ion-navbar no-border>
+    <ion-buttons end>
     <button ion-button class="button--white" menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    </ion-buttons>
     <ion-title>
       <img class="app-logo" src="assets/image/logo/logo@2x.png" />
     </ion-title>
@@ -30,38 +32,14 @@
   </ion-grid>
 
 
-  <ion-card (click)="toSavings()">
-    <img src="assets/image/objectives/familia@3x.png"/>
+  <ion-card (click)="toSavings()" id="familia">
     <div class="card-title">La millor llar per la meva familia</div>
   </ion-card>
-  <ion-card (click)="toSavings()">
-    <img src="assets/image/objectives/universitat@3x.png"/>
+  <ion-card (click)="toSavings()" id="universitat">
     <div class="card-title">Portar els fills a l’universitat</div>
   </ion-card>
-  <ion-card (click)="toSavings()">
-    <img src="assets/image/objectives/job@3x.png"/>
+  <ion-card (click)="toSavings()" id="job">
     <div class="card-title">Una merescuda jubilació</div>
   </ion-card>
-
-
-  <!-- <ion-grid no-padding>
-    <ion-row>
-      <ion-col (click)="toSavings()" col-12>
-        <div class="objective">
-          <h4 class="objective__title">La millor llar per la meva familia</h4>
-        </div>
-      </ion-col>
-      <ion-col (click)="toSavings()" col-12>
-        <div class="objective">
-          <h4 class="objective__title">La millor llar per la meva familia</h4>
-        </div>
-      </ion-col>
-      <ion-col (click)="toSavings()" col-12>
-        <div class="objective">
-          <h4 class="objective__title">La millor llar per la meva familia</h4>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
 
 </ion-content>

@@ -1,8 +1,10 @@
 <ion-header no-border>
   <ion-navbar no-border>
+    <ion-buttons end>
     <button ion-button class="button--white" menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+    </ion-buttons>
     <ion-title>
       <img class="app-logo" src="assets/image/logo/logo@2x.png" />
     </ion-title>
@@ -34,30 +36,12 @@
 
   <div class="overlay"></div>
   <ul class="timeline">
-    <li class="timeline__item">
+    <li class="timeline__item" (click)="selectTime(timeline)" *ngFor="let timeline of timelines">
       <div class="container">
-        <div class="timeline__active"></div>
-        <div class="timeline__text">L’any que ve</div>
-        <div class="timeline__year">2018</div>
+        <div [class.timeline__active]="timeline?.active" [class.timeline__active--small]="timeline?.selected"></div>
+        <div class="timeline__text">{{timeline?.name}}</div>
+        <div class="timeline__year">{{timeline?.year}}</div>
       </div>
-    </li>
-    <li class="timeline__item">
-      <div class="timeline__active"></div>
-      <div class="timeline__text">En dos anys</div>
-      <div class="timeline__year">2019</div>
-    </li>
-    <li class="timeline__item active">
-      <div class="timeline__active timeline__active--small"></div>
-      <div class="timeline__text">En tres anys</div>
-      <div class="timeline__year">2020</div>
-    </li>
-    <li class="timeline__item">
-      <div class="timeline__text">En quatre anys</div>
-      <div class="timeline__year">2021</div>
-    </li>
-    <li class="timeline__item">
-      <div class="timeline__text">L’any que ve</div>
-      <div class="timeline__year">2022</div>
     </li>
   </ul>
 </ion-content>

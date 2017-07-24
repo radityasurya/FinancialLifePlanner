@@ -24,9 +24,10 @@ $url: '../../assets/image/savings/photo@2x.png';
     font-size: 0.8em;
   }
   .overlay {
-    position: absolute;
+    position: fixed;
     left: 0;
-    height: 400px;
+    height: 40px;
+    bottom: 56px;
     display: block;
     width: 400px;
     z-index: 10000;
@@ -38,7 +39,6 @@ $url: '../../assets/image/savings/photo@2x.png';
     background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 76%, rgba(255, 255, 255, 0.9) 100%);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 76%, rgba(255, 255, 255, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
-    height: 60%;
   }
   .timeline {
     padding-left: 20px;

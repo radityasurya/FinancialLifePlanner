@@ -13,7 +13,7 @@ export class HomePage {
   }
 
   toSavings() {
-    this.navCtrl.setRoot(SavingsPage)
+    this.navCtrl.push(SavingsPage)
   }
 
 }

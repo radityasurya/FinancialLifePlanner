@@ -13,7 +13,7 @@ export class SavingsPage {
   }
 
   next() {
-    this.navCtrl.setRoot(TargetPage);
+    this.navCtrl.push(TargetPage);
   }
 
 }
