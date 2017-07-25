@@ -31,7 +31,7 @@
         <p>QUANTITAT ESTALVIADA DISPONIBLE</p>
         <ion-item no-padding>
           <ion-icon name="logo-euro" class="input-form__icon" item-end></ion-icon>
-          <ion-input clearInput value="56.500" type="number" class="input-form__text"></ion-input>
+          <ion-input #input clearInput [(ngModel)]="money" step='0.01' type="number" class="input-form__text"></ion-input>
         </ion-item>
         </div>
       </ion-col>
@@ -41,6 +41,6 @@
 
 <ion-footer no-border >
   <ion-toolbar no-padding>
-    <button (click)="next()" class="button-full" ion-button full>SEGÜENT</button>
+    <button (click)="next()" [disabled]="this.money.length < 1" class="button-full" ion-button full>SEGÜENT</button>
   </ion-toolbar>
 </ion-footer>
